@@ -34,7 +34,6 @@
 // Fuck JavaScript this shit is easier to do in php
 // range can be 1 - 7
 function drawOctave($start, $end){
-    $octave = 3;
     for ($octave = $start; $octave <= $end; $octave++){
         echo <<<EOT
                     <div octave='$octave' note='C' class="key white"><div octave='$octave' note='Db' class="key black"></div></div>
