@@ -1,0 +1,24 @@
+.container {
+    margin: 0 5px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.white {
+    margin-right: 2px;
+    height: 420px; /* Blaze it */
+    position: relative;
+    background: rgb(255, 255, 255);
+    width: 10%;
+}
+.black {
+    position: absolute;
+    z-index: 1; /* Places black keys on top of white ones */
+    background: rgb(0, 0, 0);
+    margin: 0 2px;
+    top: 0;
+    height: 180px;
+    left: 60%;
+    width: 70%;
+    height: 60%;
+}
