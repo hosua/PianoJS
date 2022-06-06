@@ -29,27 +29,8 @@
         </head>
         <body class="text-light bg-dark">
             
-            <div class="container">
-<?php
-// Fuck JavaScript this shit is easier to do in php
-// range can be 1 - 7
-function drawOctave($start, $end){
-    for ($octave = $start; $octave <= $end; $octave++){
-        echo <<<EOT
-                    <div octave='$octave' note='C' class="key white"><div octave='$octave' note='Db' class="key black"></div></div>
-                    <div octave='$octave' note='D' class="key white"><div octave='$octave' note='Eb' class="key black"></div></div>
-                    <div octave='$octave' note='E' class="key white"></div>
-                    <div octave='$octave' note='F' class="key white"><div octave='$octave' note='Gb' class="key black"></div></div>
-                    <div octave='$octave' note='G' class="key white"><div octave='$octave' note='Ab' class="key black"></div></div>
-                    <div octave='$octave' note='A' class="key white"><div octave='$octave' note='Bb' class="key black"></div></div>
-                    <div octave='$octave' note='B' class="key white"></div>
-EOT;
-    }
-}
-
-drawOctave(3, 5);
-?>
-<script src='piano.js'></script>
+            <div class="container" id="piano">
+				<script src='piano.js'></script>
             </div>
             <!--
             <div class="container">
