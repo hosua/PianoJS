@@ -4,6 +4,7 @@
     display: flex;
     flex-flow: row nowrap;
 }
+
 .white {
     margin-right: 2px;
     height: 420px; /* Blaze it */
@@ -11,14 +12,34 @@
     background: rgb(255, 255, 255);
     width: 10%;
 }
+
+.white-pressed {
+    margin-right: 2px;
+    height: 420px; /* Blaze it */
+    position: relative;
+    background: rgb(3, 252, 32);
+    width: 10%;
+}
+
 .black {
     position: absolute;
     z-index: 1; /* Places black keys on top of white ones */
     background: rgb(0, 0, 0);
     margin: 0 2px;
     top: 0;
-    height: 180px;
     left: 60%;
     width: 70%;
     height: 60%;
 }
+
+.black-pressed {
+    position: absolute;
+    z-index: 1; /* Places black keys on top of white ones */
+    background: rgb(3, 252, 32);
+    margin: 0 2px;
+    top: 0;
+    left: 60%;
+    width: 70%;
+    height: 60%;
+}
+
