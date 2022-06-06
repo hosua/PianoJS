@@ -2,7 +2,7 @@
 const EXT = '.mp3';
 const FOLDER = 'notes';
 const PIANO = document.getElementById('piano');
-
+const NOTER = document.getElementById('noter');
 function playSound(e){
      e = e || window.event;
     var target = e.target || e.srcElement,
@@ -16,13 +16,12 @@ function playSound(e){
     var filename = note + octave + EXT;
     var path = FOLDER + '/' + filename;
     var audio = new Audio(path);
-
+    NOTER.innerText = "Note: " + note + "\nOctave: " + octave;
     audio.play();
     console.log(path);
 	e.stopPropagation(); // Stops black keys from clicking twice
 	if (this.classList.contains('white')){
 		this.setAttribute('class', 'key white-pressed');
-
 		setTimeout(() => {
 			this.setAttribute('class', 'key white');
 		}, 200);
@@ -125,3 +124,4 @@ function drawOctaves(start, end){
 
 drawOctaves(2, 6);
 
+console.log("Piano initialized");
